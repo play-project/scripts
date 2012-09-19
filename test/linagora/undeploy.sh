@@ -18,9 +18,7 @@ echo "[DSB] Killing the DSB..."
 $HOME/dsb/bin/kill.sh
 rm $HOME/dsb/repository/*.xml
 
-sleep 30
-
-# Kill the DSB is not well stopped...
-
+echo "Waiting..."
+sleep 10
 
 echo "Done"
