@@ -16,6 +16,11 @@ $HOME/tomcat/bin/shutdown.sh
 # Stop the DSB
 echo "[DSB] Stopping the DSB..."
 cd $HOME/dsb/bin; ./shutdown.sh
-rm $HOME/dsb/repository/.xml
+rm $HOME/dsb/repository/*.xml
+
+sleep 30
+
+# Kill the DSB is not well stopped...
+
 
 echo "Done"
