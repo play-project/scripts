@@ -35,6 +35,7 @@ curl http://localhost:7080/metadata/rest/metadata/load?url=https://raw.github.co
 # Start the DSB
 echo "[DSB] Starting the DSB..."
 
+rm $HOME/dsb/repository/*.xml
 cp $HOME/dsb/conf/topology.xml.BAK $HOME/dsb/conf/topology.xml
 cd $HOME/dsb/bin; ./startup.sh -D
 

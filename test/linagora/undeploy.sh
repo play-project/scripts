@@ -14,8 +14,8 @@ echo "[GOV] Stopping Tomcat Web services"
 $HOME/tomcat/bin/shutdown.sh
 
 # Stop the DSB
-echo "[DSB] Stopping the DSB..."
-cd $HOME/dsb/bin; ./shutdown.sh
+echo "[DSB] Killing the DSB..."
+$HOME/dsb/bin/kill.sh
 rm $HOME/dsb/repository/*.xml
 
 sleep 30
